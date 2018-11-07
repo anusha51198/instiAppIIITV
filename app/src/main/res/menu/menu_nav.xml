@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_about"
+        android:title="About"
+        android:icon="@drawable/ic_code_black_24dp">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_hec"
+        android:title="HEC Guidelines"
+        android:icon="@drawable/ic_code_black_24dp">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_timetable"
+        android:title="Time Table"
+        android:icon="@drawable/ic_code_black_24dp">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_cal"
+        android:title="Academic Calendar"
+        android:icon="@drawable/ic_code_black_24dp">
+
+    </item>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="LogOut"
+        android:icon="@drawable/ic_code_black_24dp">
+
+    </item>
+</menu>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">IIITV</string>
+
+    <!--Main Screen-->
+    <string name="courses">Courses</string>
+    <string name="qa">Q&amp;A Forum</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!--Semesters-->
+    <string name="sem1">Semester I</string>
+    <string name="sem2">Semester II</string>
+    <string name="sem3">Semester III</string>
+    <string name="sem4">Semester IV</string>
+    <string name="sem5">Semester V</string>
+    <string name="sem6">Semester VI</string>
+    <string name="sem7">Semester VII</string>
+    <string name="sem8">Semester VIII</string>
+</resources>
