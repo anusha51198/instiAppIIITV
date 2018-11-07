@@ -4,35 +4,57 @@
     <item
         android:id="@+id/menu_about"
         android:title="About"
-        android:icon="@drawable/ic_code_black_24dp">
+        android:icon="@drawable/ic_code_black_24dp"
+        android:onClick="about"
+        android:clickable="true">
 
     </item>
 
     <item
         android:id="@+id/menu_hec"
-        android:title="HEC Guidelines"
-        android:icon="@drawable/ic_code_black_24dp">
+        android:title="Academic Guidelines"
+        android:icon="@drawable/ic_code_black_24dp"
+        android:clickable="true"
+        android:autoLink="web"
+        android:onClick="goTo3"
+        android:linksClickable="true"
+        >
 
     </item>
 
     <item
         android:id="@+id/menu_timetable"
         android:title="Time Table"
-        android:icon="@drawable/ic_code_black_24dp">
+        android:icon="@drawable/ic_code_black_24dp"
+        android:clickable="true"
+        android:autoLink="web"
+        android:onClick="goTo4"
+        android:linksClickable="true">
 
     </item>
 
     <item
         android:id="@+id/menu_cal"
         android:title="Academic Calendar"
-        android:icon="@drawable/ic_code_black_24dp">
+        android:icon="@drawable/ic_code_black_24dp"
+        android:clickable="true"
+        android:autoLink="web"
+        android:onClick="goTo2"
+        android:linksClickable="true">
 
+    </item>
+    <item
+        android:clickable="true"
+        android:autoLink="web"
+        android:onClick="goTo1"
+        android:linksClickable="true"
+        android:icon="@drawable/ic_code_black_24dp"
+        android:id="@+id/menu_Hlist"
+        android:title="Holiday List-2019">
     </item>
 
     <item
         android:id="@+id/menu_logout"
         android:title="LogOut"
-        android:icon="@drawable/ic_code_black_24dp">
-
-    </item>
+        android:icon="@drawable/ic_code_black_24dp"></item>
 </menu>

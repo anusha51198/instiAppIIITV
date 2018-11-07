@@ -39,7 +39,7 @@ public class QAActivity extends AppCompatActivity {
     ArrayList<String> idData = new ArrayList<String>();
     FirebaseAuth firebaseAuth;
 
-   CustomAdapter customAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,7 +83,7 @@ public class QAActivity extends AppCompatActivity {
                             }
 
                             final ListView listView = (ListView) findViewById(R.id.list_View);
-                            customAdapter = new CustomAdapter(QAActivity.this,elements);
+                            CustomAdapter customAdapter = new CustomAdapter(QAActivity.this,elements);
 
                             listView.setAdapter(customAdapter);
 
@@ -130,7 +130,7 @@ public class QAActivity extends AppCompatActivity {
                             idData.add(dc.getDocument().getId());
 
                             ListView listView = (ListView) findViewById(R.id.list_View);
-                            customAdapter = new CustomAdapter(QAActivity.this,elements);
+                            CustomAdapter customAdapter = new CustomAdapter(QAActivity.this,elements);
                             listView.setAdapter(customAdapter);
 
                             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -160,27 +160,6 @@ public class QAActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_search,menu);
-        MenuItem item = menu.findItem(R.id.searchMenu);
-        SearchView searchView = (SearchView) item.getActionView();
 
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                //customAdapter.getFilter().filter(newText);
-                return false;
-            }
-        });
-
-        return super.onCreateOptionsMenu(menu);
-    }
 
 }

@@ -32,8 +32,10 @@ public class addThoughtActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_thought);
 
         firebaseAuth = FirebaseAuth.getInstance();
-        String s[] = firebaseAuth.getCurrentUser().getEmail().split("@");
-        final String username = s[0];
+       // String s[] = firebaseAuth.getCurrentUser().getEmail().split("@");
+       // final String username = s[0];
+
+        final String username = firebaseAuth.getCurrentUser().getDisplayName().toString();
 
 
         editText2 = (EditText) findViewById(R.id.editText2);

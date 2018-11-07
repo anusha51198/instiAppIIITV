@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="About IIIT Vadodara"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="50dp"
+            android:src="@drawable/iiitvlogo" />
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Indian Institute of Information Technology Vadodara (IIIT-V) is established by the Ministry of Human Resource Development (MHRD) , Government Of India under Public Private Partnership (PPP) as Institute of National Importance with a view to develop new knowledge in information technology and to provide manpower of global standards for the information technology industry and to provide for certain other matters connected with such institutions or incidental thereto. The partners in this project are Government Of India, Government of Gujarat, Gujarat Energy Research and Management Institute, Gujarat State Fertilizers and Chemicals and Tata Consultancy Services. The Institute was established in the year 2013. At present, IIIT-V is operating from its temporary premises at Government Engineering College (Gandhinagar) till the time its new campus is made operational at Vadodara, Gujarat. The Government of Gujarat has lent support to the Institute by providing 50 acres of land at Dumad, Vadodara and a Academic Block at GEC, Gandhinagar
+  Student stay in state of the art hostel at PDPU High rise hostel complex."
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            />
+    </LinearLayout>
+
+</ScrollView>

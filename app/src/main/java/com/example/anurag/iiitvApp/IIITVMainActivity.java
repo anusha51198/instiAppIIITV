@@ -1,6 +1,7 @@
 package com.example.anurag.iiitvApp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -24,6 +25,16 @@ public class IIITVMainActivity extends AppCompatActivity {
     private DrawerLayout dl;
     private ActionBarDrawerToggle adt;
     private Button qabtn;
+    private FirebaseAuth.AuthStateListener firebaseAuthListner;
+
+
+   /*   @Override
+  protected void onStart() {
+        super.onStart();
+        firebaseAuth.addAuthStateListener(firebaseAuthListner);
+
+    }*/
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +43,18 @@ public class IIITVMainActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
+       /* firebaseAuthListner=new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                if (firebaseAuth.getCurrentUser() == null) {
+                    startActivity(new Intent(IIITVMainActivity.this, MainActivity.class));
+                }
+            }
+        };  */
 
 
 
-            qabtn = (Button) findViewById(R.id.b_qa);
+        qabtn = (Button) findViewById(R.id.b_qa);
             qabtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -88,7 +107,7 @@ public class IIITVMainActivity extends AppCompatActivity {
                 {
                     firebaseAuth.signOut();
                     finish();
-                    startActivity(new Intent(IIITVMainActivity.this,LoginActivity.class));
+                    startActivity(new Intent(IIITVMainActivity.this,MainActivity.class));
                 }
 
                 return true;
@@ -112,5 +131,31 @@ public class IIITVMainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         return adt.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
+    }
+
+    private void goToUrl (String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(launchBrowser);
+    }
+
+    public void about(MenuItem item) {
+        Intent intent = new Intent (IIITVMainActivity.this,About.class);
+        startActivity (intent);
+    }
+
+    public void goTo1(MenuItem item) {
+        goToUrl ( "http://iiitvadodara.ac.in/pdf/Holiday%20List%202019.pdf");
+    }
+    //acc cal
+    public void goTo2(MenuItem item) {
+        goToUrl ("http://iiitvadodara.ac.in/pdf/Academic%20Calendar%20Autumn%202018-19.pdf");
+    }
+    // academic regulations
+    public void goTo3(MenuItem item) {
+        goToUrl ("http://iiitvadodara.ac.in/pdf/IIITV-Regulations-2018.pdf");
+    }
+    public void goTo4(MenuItem item) {
+        goToUrl ("https://goo.gl/rFYpW8");
     }
 }

@@ -33,18 +33,27 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="imageAsset" value="C:\Users\anurag\Desktop\ans_icon.png" />
-                                      <entry key="outputName" value="ic_action_search" />
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="C:\Users\anurag\Desktop\IIIT-Vadodara-Logo.png" />
+                                      <entry key="outputName" value="ic_action_appLogo" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
+                            <entry key="launcher">
+                              <value>
+                                <PersistentState>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="foregroundImage" value="C:\Users\anurag\Desktop\IIIT-Vadodara-Logo.png" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
                           </map>
                         </option>
                       </PersistentState>

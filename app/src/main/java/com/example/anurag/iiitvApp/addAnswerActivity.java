@@ -31,8 +31,10 @@ public class addAnswerActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        String s[] = firebaseAuth.getCurrentUser().getEmail().split("@");
-        final String username = s[0];
+        //String s[] = firebaseAuth.getCurrentUser().getEmail().split("@");
+        //final String username = s[0];
+
+        final String username = firebaseAuth.getCurrentUser().getDisplayName().toString();
 
             final String ansColId = getIntent().getStringExtra("AnsColId");
 
